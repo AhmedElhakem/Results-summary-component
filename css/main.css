@@ -9,6 +9,19 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
     background-color: #ffffff;
 }
+@media (max-width: 767px){
+    .results {
+        width: 375px;
+        flex-direction: column;
+    }
+    .results .your-results{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
 li {
     list-style: none;
 }
@@ -18,14 +31,16 @@ a {
 .results {
     height: 100vh;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 .results .your-results {
     background: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
     color: white;
-    border-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     text-align: center;
     padding: 35px;
 }
