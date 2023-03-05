@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #ffffff;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.results {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.results .your-results {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    padding: 35px;
+}
+.results .your-results .results-title {
+    font-size: 16px;
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.results .your-results .percentage {
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.results .your-results .percentage span {
+    font-size: 50px;
+    font-weight: bold;
+}
+.results .your-results .percentage div {
+    color: hsl(241, 100%, 89%);
+    font-weight: bold;
+    opacity: 0.5;
+    font-size: 15px;
+}
+.results .your-results .info .title {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 20px auto;
+}
+.results .your-results .info p {
+    font-size: 14px;
+    width: 230px;
+    color: hsla(241, 100%, 89%, 0.72);
+    font-weight: bold;
+    padding-bottom: 10px;
+    line-height: 1.4;
+}
+.results .summary {
+    background-color: hsl(0, 0%, 100%);
+    padding: 40px 40px 40px 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(227, 227, 227);
+}
+.results .summary .summary-title {
+    color:hsl(224, 30%, 27%);
+    opacity: 0.9;
+    font-weight: bold;
+    width: 250px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.results .summary ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+}
+.results .summary ul li::before {
+    content: "";
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    height: 19px;
+    width: 19px;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+.results .summary ul li .title {
+    padding-left: 25px;
+}
+.results .summary ul li .percentage {
+    color: hsl(224, 30%, 27%);
+}
+.results .summary ul li .percentage span {
+    opacity: 0.5;
+}
+.results .summary ul .reaction {
+    background-color: hsla(0, 64%, 86%, 0.178)
+}
+.results .summary ul .reaction .title {
+    position: relative;
+    color: hsl(0, 100%, 67%, 0.8);
+}
+.results .summary ul .reaction::before {
+    background-image: url(/images/icon-reaction.svg);
+}
+.results .summary ul .memory {
+    background-color: hsla(39, 96%, 81%, 0.178);
+}
+.results .summary ul .memory .title {
+    color: hsl(39, 100%, 56%, 0.8);
+}
+.results .summary ul .memory::before {
+    background-image: url(/images/icon-memory.svg);
+}
+.results .summary ul .verbal {
+    background-color: hsla(166, 100%, 79%, 0.178);
+}
+.results .summary ul .verbal .title {
+    color: hsl(166, 100%, 37%, 0.8);
+}
+.results .summary ul .verbal::before {
+    background-image: url(/images/icon-verbal.svg);
+}
+.results .summary ul .visual {
+    background-color: hsla(234, 100%, 79%, 0.178);
+}
+.results .summary ul .visual .title {
+    color: hsla(234, 84%, 42%, 0.8);
+}
+.results .summary ul .visual::before {
+    background-image: url(/images/icon-visual.svg);
+}
+.results .summary a {
+    color: rgba(255, 255, 255, 0.784);
+    display: block;
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 30px;
+    margin: 20px 0 0;
+}
+.results .summary a:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
