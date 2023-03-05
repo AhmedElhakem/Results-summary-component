@@ -9,7 +9,10 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
     background-color: #ffffff;
 }
-@media(min-width:1440px) {
+@media(min-width:1000px) {
+    .results {
+        justify-content: center;
+    }
     .results .your-results {
         border-top-right-radius: 25px;
         border-top-left-radius: 25px;
@@ -46,7 +49,6 @@ a {
 .results {
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .results .your-results {
@@ -150,7 +152,7 @@ a {
     color: hsl(0, 100%, 67%, 0.8);
 }
 .results .summary ul .reaction::before {
-    background-image: url(images/icon-reaction.svg);
+    background-image: url(../images/icon-reaction.svg);
 }
 .results .summary ul .memory {
     background-color: hsla(39, 96%, 81%, 0.178);
@@ -159,7 +161,7 @@ a {
     color: hsl(39, 100%, 56%, 0.8);
 }
 .results .summary ul .memory::before {
-    background-image: url(images/icon-memory.svg);
+    background-image: url(../images/icon-memory.svg);
 }
 .results .summary ul .verbal {
     background-color: hsla(166, 100%, 79%, 0.178);
@@ -168,7 +170,7 @@ a {
     color: hsl(166, 100%, 37%, 0.8);
 }
 .results .summary ul .verbal::before {
-    background-image: url(images/icon-verbal.svg);
+    background-image: url(../images/icon-verbal.svg);
 }
 .results .summary ul .visual {
     background-color: hsla(234, 100%, 79%, 0.178);
@@ -177,7 +179,7 @@ a {
     color: hsla(234, 84%, 42%, 0.8);
 }
 .results .summary ul .visual::before {
-    background-image: url(images/icon-visual.svg);
+    background-image: url(../images/icon-visual.svg);
 }
 .results .summary a {
     color: rgba(255, 255, 255, 0.784);
