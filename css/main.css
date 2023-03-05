@@ -125,7 +125,7 @@ a {
     color: hsl(0, 100%, 67%, 0.8);
 }
 .results .summary ul .reaction::before {
-    background-image: url(./images/icon-reaction.svg);
+    background-image: url(../images/icon-reaction.svg);
 }
 .results .summary ul .memory {
     background-color: hsla(39, 96%, 81%, 0.178);
@@ -134,7 +134,7 @@ a {
     color: hsl(39, 100%, 56%, 0.8);
 }
 .results .summary ul .memory::before {
-    background-image: url(./images/icon-memory.svg);
+    background-image: url(../images/icon-memory.svg);
 }
 .results .summary ul .verbal {
     background-color: hsla(166, 100%, 79%, 0.178);
@@ -143,7 +143,7 @@ a {
     color: hsl(166, 100%, 37%, 0.8);
 }
 .results .summary ul .verbal::before {
-    background-image: url(./images/icon-verbal.svg);
+    background-image: url(../images/icon-verbal.svg);
 }
 .results .summary ul .visual {
     background-color: hsla(234, 100%, 79%, 0.178);
@@ -152,7 +152,7 @@ a {
     color: hsla(234, 84%, 42%, 0.8);
 }
 .results .summary ul .visual::before {
-    background-image: url(./images/icon-visual.svg);
+    background-image: url(../images/icon-visual.svg);
 }
 .results .summary a {
     color: rgba(255, 255, 255, 0.784);
