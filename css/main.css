@@ -9,6 +9,14 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
     background-color: #ffffff;
 }
+@media(min-width:1440px) {
+    .results .your-results {
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
 @media (max-width: 767px){
     .results {
         width: 375px;
@@ -37,10 +45,6 @@ a {
 .results .your-results {
     background: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
     color: white;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
     text-align: center;
     padding: 35px;
 }
